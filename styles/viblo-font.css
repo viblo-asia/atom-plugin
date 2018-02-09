@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'viblo';
+  src:url("atom://viblo/fonts/viblo.eot");
+  src:url("atom://viblo/fonts/viblo.eot?#iefix") format("embedded-opentype"),
+    url("atom://viblo/fonts/viblo.woff") format("woff"),
+    url("atom://viblo/fonts/viblo.ttf") format("truetype"),
+    url("atom://viblo/fonts/viblo.svg#viblo") format("svg");
+}
+
+[class^="viblo-"]:before,
+[class*=" viblo-"]:before,
+[class^="icon-viblo-"]:before,
+[class*=" icon-viblo-"]:before {
+  vertical-align: sub;
+  font-family: "viblo" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-viblo-logo:before {
+  content: "\61";
+}
+
+
+
+.viblo-logo:before {
+  content: "\61";
+}
+.viblo-table:before {
+  content: "\64";
+}
+.viblo-strikethrough:before {
+  content: "\62";
+}
+.viblo-unlocked:before {
+  content: "\63";
+}
+.viblo-eraser:before {
+  content: "\66";
+}
+.viblo-images:before {
+  content: "\67";
+}
+.viblo-quote-left:before {
+  content: "\68";
+}
+.viblo-quote-right:before {
+  content: "\69";
+}
+.viblo-angle-double-left:before {
+  content: "\6a";
+}
+.viblo-angle-double-right:before {
+  content: "\6b";
+}
+.viblo-facebook-official:before {
+  content: "\6c";
+}
+.viblo-repeat:before {
+  content: "\65";
+}
+.viblo-undo:before {
+  content: "\6d";
+}
+.viblo-header:before {
+  content: "\6e";
+}
+.viblo-eye:before {
+  content: "\6f";
+}
+.viblo-eye-slash:before {
+  content: "\70";
+}
+.viblo-markdown:before {
+  content: "\71";
+}
