@@ -140,7 +140,6 @@
       border: 1px solid @tool-panel-border-color;
       background-color: @background-color-highlight;
       overflow: hidden;
-      cursor: pointer;
       -webkit-user-select: none;
 
       &:hover {
@@ -286,7 +285,7 @@
   margin-right: 1rem;
 }
 
-.post-meta {
+.post-card__status {
   display: flex;
   .post-meta__link {
     margin-right: 1rem;
@@ -299,6 +298,12 @@
   &--include-time {
     .meta-status {
       margin-right: 2rem;
+    }
+  }
+
+  .post-card__status__icons {
+    i {
+      cursor: pointer;
     }
   }
 
@@ -358,6 +363,10 @@
 
 .ml-05 {
   margin-left: 0.5rem;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .btn-refresh {
