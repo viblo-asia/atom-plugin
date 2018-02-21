@@ -1,0 +1,429 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.icon-viblo:before {
+    color: rgba(84, 136, 199, 0.5);
+    vertical-align: sub;
+}
+
+.tab {
+  &[data-type="VibloPluginSettingsView"] {
+    .title {
+      text-align: center;
+    }
+    &:before {
+        background: #5488c7 !important;
+    }
+  }
+  &.active {
+    .viblo-logo, .icon-viblo-logo {
+      &:before {
+        color: #5488c7;
+      }
+    }
+  }
+  .viblo-logo, .icon-viblo-logo {
+    &:before {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .icon-post-public:before {
+    content: "\61 \6f";
+  }
+  .icon-post-draft:before {
+    content: "\61 \70";
+  }
+  .icon-post-draft-public:before {
+    content: "\61 \63";
+  }
+}
+
+.icon-viblo-markdown-preview:before {
+  content: "\61 \71";
+  color: rgb(84, 136, 199);
+  font-size: 18px;
+  vertical-align: sub;
+}
+
+.item-views > div[is="space-pen-div"] {
+  > atom-text-editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.viblo-atom-plugin {
+  &.settings-view {
+    .section-container {
+      max-width: 60em;
+    }
+    .about-panel {
+      max-width: 100%;
+      width: 100%;
+      .section-container {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .viblo-logo {
+      &:before {
+        color: rgb(84, 136, 199);
+        font-size: 16px;
+      }
+    }
+    button {
+      &.btn {
+        .loading {
+          display: none;
+        }
+        &.is-processing {
+          &:before {
+            display: none;
+          }
+          .loading {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .section {
+      section.section {
+        padding: 0;
+      }
+      &:first-child, &:last-child {
+        // padding: 1em 4.5em 4.5em 4.5em;
+      }
+
+      .section-heading {
+        .viblo-logo {
+          &:before {
+            font-size: 2.2em;
+          }
+        }
+      }
+
+      .sub-section {
+        margin: 4.5em 0 0 0;
+
+        .posts-container {
+          .row:last-child {
+            .post-card {
+              margin-bottom: 0;
+            }
+          }
+          max-height: 515px;
+          overflow: auto;
+        }
+         &.collapsed {
+              .posts-container .post-card,
+              .sub-section-body .control-group {
+                display: none !important;
+              }
+        }
+      }
+    }
+
+    .post-card {
+      padding: 10px;
+      margin-bottom: 10px;
+      list-style-type: none;
+      font-size: 1.1em;
+      border-radius: 6px;
+      border: 1px solid @tool-panel-border-color;
+      background-color: @background-color-highlight;
+      overflow: hidden;
+      -webkit-user-select: none;
+
+      &:hover {
+          background-color: @panel-heading-background-color;
+      }
+
+      .meta-user {
+          flex: 1 0 auto;
+          margin-top: 5px;
+          margin-right: 10px;
+      }
+
+      .meta {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          width: 100%;
+      }
+
+      .meta-controls {
+        .btn-toolbar {
+          display: inline-block;
+          margin-left: 5px;
+        }
+        .btn-toolbar > .btn-group {
+          float: left;
+          margin: 5px 0 0 5px;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .image-thumbs {
+    overflow: auto;
+    max-height: 226px;
+  }
+  .body {
+    padding: 10px;
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+    .form-control {
+        font-size: 1.25em;
+        background-color: @base-background-color;
+        border-color: @base-border-color;
+        height: 2em;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .control-label {
+      display: block;
+    }
+    select {
+      &.form-control {
+        color: @text-color;
+        background-color: @base-background-color;
+        border-color: @base-border-color;
+        margin: 5px 0 15px;
+      }
+    }
+    .submit-loader {
+      display: none;
+      text-align: center;
+    }
+    &.request-loading {
+      .submit-loader {
+        display: block;
+      }
+      .content {
+        display: none;
+      }
+    }
+
+    .btn-toolbar {
+      text-align: center;
+      padding: 20px 0 15px 0;
+      font-size: 1.2em;
+
+      .btn-group {
+        float: none;
+
+        .btn {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+.markdown-preview:not([data-use-github-style]) pre, .markdown-preview:not([data-use-github-style]) code {
+  background: @inset-panel-background-color !important;
+  font-size: 1em;
+}
+.about-panel {
+  .viblo-logo:before {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    font-size: 4.5em !important;
+    color: @text-color !important;
+  }
+  .viblo-logo:hover:before {
+    color: #ffffff !important;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+  .about-links {
+    margin-top: 60px;
+
+    .icon-heart:before {
+      color: #F73131;
+    }
+    .icon:before {
+      font-size: 18px;
+      vertical-align: sub;
+    }
+  }
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.post-card__status {
+  display: flex;
+  .post-meta__link {
+    margin-right: 1rem;
+    color: #9da5b4;
+  }
+  .published-date {
+    margin-right: auto;
+    font-size: 1.2rem;
+  }
+  &--include-time {
+    .meta-status {
+      margin-right: 2rem;
+    }
+  }
+
+  .post-card__status__icons {
+    i {
+      cursor: pointer;
+    }
+  }
+
+  .meta-status {
+    display: flex;
+    .meta-status__item {
+      font-size: 1.2rem;
+      i:before {
+        margin-right: 0.5rem;
+      }
+      + .meta-status__item {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .points {
+    display: flex;
+    font-size: 1.2rem;
+    color: #9da5b4;
+    justify-content: center;
+    align-items: center;
+    .carets {
+      display: inline-flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      max-height: 1rem;
+      .fa {
+        position: relative;
+      }
+      .fa-caret-up {
+        top: -0.4rem;
+      }
+      .fa-caret-down {
+        top: -0.9rem;
+      }
+    }
+  }
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.draft-icon {
+  margin-right: 1rem;
+}
+
+.contents {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.ml-05 {
+  margin-left: 0.5rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn-refresh {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  &:hover {
+    color: inherit;
+  }
+}
+
+// Pagination
+ul.pagination {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-left: -0.5rem;
+
+  & > li {
+    display: block;
+    font-size: 16px;
+    color: @syntax-text-color;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+    a {
+      display: block;
+      height: 38px;
+      min-width: 38px;
+      line-height: 38px;
+      color: inherit;
+      text-decoration: none;
+      border-radius: 3px;
+      border: solid 1px @base-border-color;
+
+      &.active {
+        color: contrast(@background-color-highlight, darken(@syntax-text-color, 32%), lighten(@syntax-text-color, 32%));
+        background-color: @background-color-highlight;
+      }
+
+      &.disabled {
+        color: #333;
+        cursor: default;
+      }
+    }
+
+    .fa {
+      font-size: 18px;
+    }
+  }
+}
+
+.unpage-pagination .page-item a{
+  padding: 0 5px
+}
+// End pagination

@@ -1,0 +1,44 @@
+{
+  "context-menu": {
+    "atom-workspace atom-text-editor[data-grammar*=\"gfm\"]": [
+      {
+        "label": "Save to Viblo",
+        "command": "viblo:save"
+      },
+      {
+        "label": "Viblo toggle preview",
+        "command": "viblo:toggle-preview"
+      }
+    ],
+    ".markdown-preview": [
+      {
+        "label": "Save to Viblo",
+        "command": "viblo:save"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Viblo Editor",
+          "submenu": [
+            {
+              "label": "Settings",
+              "command": "viblo:settings"
+            },
+            {
+              "label": "Publish",
+              "command": "viblo-view:toggle"
+            },
+            {
+              "label": "About",
+              "command": "viblo:about"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

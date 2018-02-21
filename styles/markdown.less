@@ -1,0 +1,209 @@
+@import "syntax-variables";
+
+// Markdown contents
+@markdown-h1-size: 1.95rem;
+@markdown-h2-size: 1.75rem;
+@markdown-h3-size: 1.45rem;
+@markdown-h4-size: 1.15rem;
+@markdown-title-size: 2.5rem;
+@markdown-code-background: #282c34;
+@markdown-header-border-color: #dbe3e8;
+
+@fg: @syntax-text-color;
+@bg: @syntax-background-color;
+
+@fg-accent: @syntax-cursor-color;
+@fg-strong: contrast(@bg, darken(@fg, 32%), lighten(@fg, 32%));
+@fg-subtle: contrast(@fg, lighten(@fg, 16%), darken(@fg, 16%));
+
+@border: contrast(@bg, lighten(@bg, 16%), darken(@bg, 16%));
+
+@margin: 1.5em;
+
+// colors:
+@gray-lightest: #f6f6f7;
+@gray-dark: #292b2c;
+@brand-gray: #9b9b9b;
+@brand-secondary: #5488c7;
+@brand-inverse: #0b1a33;
+
+// Borders:
+@base-border-radius: 3px;
+@base-border-color: #d6d6d7;
+@border-width: 1px;
+
+// Code
+@code-font-size: 90%;
+@code-padding-x: .4rem;
+@code-padding-y: .2rem;
+@code-color: #bd4147;
+@code-bg: @gray-lightest;
+
+@kbd-color: #ffffff;
+@kbd-bg: @gray-dark;
+
+@pre-bg: @gray-lightest;
+@pre-color: @gray-dark;
+@pre-border-color: #cccccc;
+@pre-scrollable-max-height: 340px;
+
+.viblo-markdown-preview {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  .md-contents {
+    font-size: 1.2rem;
+    line-height: 1.65;
+    padding: 2rem;
+    overflow-x: hidden;
+    p > code {
+      color: lighten(#bd4147, 5);
+    }
+
+    strong {
+      color: @fg-strong;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .emoji {
+      height: 1.25rem;
+      padding: 0 .05em 0 .1em;
+      vertical-align: -0.2em;
+    }
+
+    .is-markdown-title, .md-title {
+      text-align: left;
+      line-height: 1.2;
+      font-weight: bold;
+      color: @brand-inverse;
+      word-wrap: break-word;
+      word-break: break-word;
+      font-size: @markdown-title-size;
+    }
+
+    p {
+      text-align: left;
+      line-height: 1.65;
+      margin-bottom: .5em;
+      font-weight: normal;
+      color: @fg;
+      letter-spacing: -.003em;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+
+    .hljs {
+      padding: 1rem;
+      margin: .5rem 0;
+      position: relative;
+      border-radius: @base-border-radius;
+    }
+
+    pre code:not(.hljs) {
+      font-size: 1.2rem;
+      color: #ffffff;
+      padding: 1rem;
+      display: block;
+      overflow-x: auto;
+      position: relative;
+      //border-radius: @base-border-radius;
+      //background-color: @markdown-code-background;
+    }
+
+    img {
+      &:not(.emoji) {
+        cursor: pointer;
+        text-align: center;
+        max-width: 100% !important;
+        vertical-align: baseline;
+        &.block-image {
+          margin: 1rem auto;
+          display: block;
+        }
+      }
+    }
+
+    table {
+      margin: .5rem 0;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border: 1px solid @base-border-color;
+      border-collapse: collapse;
+      background-color: transparent;
+
+      th {
+        color: @fg-strong;
+      }
+
+      td, th {
+        border: 1px solid @base-border-color;
+        padding: 0.75rem;
+        vertical-align: top;
+      }
+
+      tbody {
+        tr {
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.075);
+          }
+        }
+      }
+    }
+
+    & > blockquote {
+      overflow: auto;
+      padding: .5rem 1rem;
+      background-color: #f8f8f8;
+      border-left: .25rem solid @brand-secondary;
+
+      p {
+        margin-bottom: 0 !important;
+        color: @fg;
+      }
+
+      blockquote {
+        margin: 0 !important;
+      }
+    }
+
+    // Headings
+    h1, h2, h3, h4, h5 {
+      font-weight: bold;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid @markdown-header-border-color;
+      color: @fg-strong;
+    }
+
+    h1, h2, h3 {
+      padding-bottom: .5rem;
+      margin: 1.7rem 0 .6rem;
+    }
+
+    h1 {
+      font-size: @markdown-h1-size;
+    }
+
+    h2 {
+      font-size: @markdown-h2-size;
+    }
+
+    h3 {
+      font-size: @markdown-h3-size;
+    }
+
+    h4 {
+      margin: .6em 0;
+      font-size: @markdown-h4-size;
+    }
+
+    .support-article-content {
+      font-size: 1rem;
+    }
+  }
+}
