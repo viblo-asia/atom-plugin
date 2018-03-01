@@ -4,7 +4,7 @@
     "ctrl-alt-v": "viblo:toggle-preview",
     "ctrl-shift-s": "viblo:save-post"
   },
-  ".platform-darwin atom-workspace, .platform-linux atom-workspace": {
+  ".platform-darwin atom-workspace": {
     "alt-S": "viblo:settings",
     "cmd-alt-v": "viblo:toggle-preview",
     "cmd-shift-s": "viblo:save-post"

@@ -3,17 +3,21 @@
     "atom-workspace atom-text-editor[data-grammar*=\"gfm\"]": [
       {
         "label": "Save to Viblo",
-        "command": "viblo:save"
+        "command": "viblo:save-post"
       },
       {
-        "label": "Viblo toggle preview",
+        "label": "Viblo Preview",
         "command": "viblo:toggle-preview"
+      },
+      {
+        "label": "Viblo Image Helper",
+        "command": "viblo:image-helper"
       }
     ],
     ".markdown-preview": [
       {
         "label": "Save to Viblo",
-        "command": "viblo:save"
+        "command": "viblo:save-post"
       }
     ]
   },
@@ -27,10 +31,6 @@
             {
               "label": "Settings",
               "command": "viblo:settings"
-            },
-            {
-              "label": "Publish",
-              "command": "viblo-view:toggle"
             },
             {
               "label": "About",
