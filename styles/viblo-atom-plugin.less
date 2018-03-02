@@ -5,8 +5,8 @@
 @import "ui-variables";
 
 .icon-viblo:before {
-    color: rgba(84, 136, 199, 0.5);
-    vertical-align: sub;
+  color: rgba(84, 136, 199, 0.5);
+  vertical-align: sub;
 }
 
 .tab {
@@ -15,7 +15,7 @@
       text-align: center;
     }
     &:before {
-        background: #5488c7 !important;
+      background: #5488c7 !important;
     }
   }
   &.active {
@@ -122,11 +122,11 @@
           max-height: 515px;
           overflow: auto;
         }
-         &.collapsed {
-              .posts-container .post-card,
-              .sub-section-body .control-group {
-                display: none !important;
-              }
+        &.collapsed {
+          .posts-container .post-card,
+          .sub-section-body .control-group {
+            display: none !important;
+          }
         }
       }
     }
@@ -143,20 +143,20 @@
       -webkit-user-select: none;
 
       &:hover {
-          background-color: @panel-heading-background-color;
+        background-color: @panel-heading-background-color;
       }
 
       .meta-user {
-          flex: 1 0 auto;
-          margin-top: 5px;
-          margin-right: 10px;
+        flex: 1 0 auto;
+        margin-top: 5px;
+        margin-right: 10px;
       }
 
       .meta {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: flex-end;
-          width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
       }
 
       .meta-controls {
@@ -173,82 +173,21 @@
   }
 }
 
-.modal {
-  .image-thumbs {
-    overflow: auto;
-    max-height: 226px;
-  }
-  .body {
-    padding: 10px;
-
-    h1 {
-      font-size: 2em;
-      text-align: center;
-    }
-    .form-control {
-        font-size: 1.25em;
-        background-color: @base-background-color;
-        border-color: @base-border-color;
-        height: 2em;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .control-label {
-      display: block;
-    }
-    select {
-      &.form-control {
-        color: @text-color;
-        background-color: @base-background-color;
-        border-color: @base-border-color;
-        margin: 5px 0 15px;
-      }
-    }
-    .submit-loader {
-      display: none;
-      text-align: center;
-    }
-    &.request-loading {
-      .submit-loader {
-        display: block;
-      }
-      .content {
-        display: none;
-      }
-    }
-
-    .btn-toolbar {
-      text-align: center;
-      padding: 20px 0 15px 0;
-      font-size: 1.2em;
-
-      .btn-group {
-        float: none;
-
-        .btn {
-          padding: 10px 20px;
-        }
-      }
-    }
-  }
-}
-
-
 @keyframes neon2 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
 
 @-webkit-keyframes neon2 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
 
@@ -256,6 +195,7 @@
   background: @inset-panel-background-color !important;
   font-size: 1em;
 }
+
 .about-panel {
   .viblo-logo:before {
     -webkit-transition: all 1s;
@@ -272,7 +212,7 @@
     margin-top: 60px;
 
     .icon-heart:before {
-      color: #F73131;
+      color: #f73131;
     }
     .icon:before {
       font-size: 18px;
@@ -412,7 +352,7 @@ ul.pagination {
       }
 
       &.disabled {
-        color: #333;
+        color: #333333;
         cursor: default;
       }
     }
@@ -423,7 +363,32 @@ ul.pagination {
   }
 }
 
-.unpage-pagination .page-item a{
+.unpage-pagination .page-item a {
   padding: 0 5px
 }
+
 // End pagination
+
+.image-thumbnails {
+  max-height: 250px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  .thumbnail-box {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+    margin-bottom: 1rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    .thumbnail {
+      display: inline-block;
+      img {
+        border: none;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+  }
+}

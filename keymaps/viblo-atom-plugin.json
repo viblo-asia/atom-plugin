@@ -1,14 +1,18 @@
 {
   ".platform-win32 atom-workspace, .platform-linux atom-workspace": {
-    "alt-S": "viblo:settings",
+    "ctrl-alt-o": "viblo:open",
+    "ctrl-alt-s": "viblo:settings",
     "ctrl-alt-v": "viblo:toggle-preview",
     "ctrl-alt-c": "viblo:create-post",
+    "ctrl-alt-i": "viblo:image-helper",
     "ctrl-shift-s": "viblo:save-post"
   },
   ".platform-darwin atom-workspace": {
-    "alt-S": "viblo:settings",
+    "cmd-alt-o": "viblo:open",
+    "cmd-alt-s": "viblo:settings",
     "cmd-alt-v": "viblo:toggle-preview",
     "cmd-alt-c": "viblo:create-post",
+    "cmd-alt-i": "viblo:image-helper",
     "cmd-shift-s": "viblo:save-post"
   }
 }

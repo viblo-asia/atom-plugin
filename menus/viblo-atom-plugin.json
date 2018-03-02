@@ -6,7 +6,7 @@
         "command": "viblo:save-post"
       },
       {
-        "label": "Viblo Preview",
+        "label": "Viblo Toggle Preview",
         "command": "viblo:toggle-preview"
       },
       {
