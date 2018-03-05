@@ -1,18 +1,24 @@
 {
   ".platform-win32 atom-workspace, .platform-linux atom-workspace": {
     "ctrl-alt-o": "viblo:open",
-    "ctrl-alt-s": "viblo:settings",
-    "ctrl-alt-v": "viblo:toggle-preview",
+    "ctrl-alt-p": "viblo:publish-posts",
+    "ctrl-alt-d": "viblo:draft-posts",
     "ctrl-alt-c": "viblo:create-post",
+    "ctrl-shift-s": "viblo:save-post",
+    "ctrl-alt-v": "viblo:toggle-preview",
     "ctrl-alt-i": "viblo:image-helper",
-    "ctrl-shift-s": "viblo:save-post"
+    "ctrl-alt-s": "viblo:settings",
+    "ctrl-alt-a": "viblo:about"
   },
   ".platform-darwin atom-workspace": {
     "cmd-alt-o": "viblo:open",
-    "cmd-alt-s": "viblo:settings",
-    "cmd-alt-v": "viblo:toggle-preview",
+    "cmd-alt-p": "viblo:publish-posts",
+    "cmd-alt-d": "viblo:draft-posts",
     "cmd-alt-c": "viblo:create-post",
+    "cmd-shift-s": "viblo:save-post",
+    "cmd-alt-v": "viblo:toggle-preview",
     "cmd-alt-i": "viblo:image-helper",
-    "cmd-shift-s": "viblo:save-post"
+    "cmd-alt-s": "viblo:settings",
+    "cmd-alt-a": "viblo:about"
   }
 }
