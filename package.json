@@ -45,6 +45,7 @@
   },
   "deserializers": {
     "App": "createAppInstance",
-    "VibloMarkdownPreviewPane": "createVibloMarkdownPreviewPane"
+    "VibloMarkdownPreviewPane": "createVibloMarkdownPreviewPane",
+    "VibloEditor": "createVibloEditor"
   }
 }
