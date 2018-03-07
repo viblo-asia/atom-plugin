@@ -98,21 +98,23 @@
     }
 
     .hljs {
-      padding: 1rem;
+      padding: 1.2rem;
       margin: .5rem 0;
       position: relative;
       border-radius: @base-border-radius;
     }
 
-    pre code:not(.hljs) {
-      font-size: 1.2rem;
-      color: #ffffff;
-      padding: 1rem;
-      display: block;
-      overflow-x: auto;
-      position: relative;
-      //border-radius: @base-border-radius;
-      //background-color: @markdown-code-background;
+    pre {
+      margin-bottom: 1.2rem;
+      code:not(.hljs) {
+        font-size: 1.2rem;
+        color: #ffffff;
+        padding: 1rem;
+        display: block;
+        overflow-x: auto;
+        position: relative;
+        border-radius: @base-border-radius;
+      }
     }
 
     img {
@@ -129,10 +131,10 @@
     }
 
     table {
-      margin: .5rem 0;
+      margin: .75rem 0;
       width: 100%;
       max-width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
       border: 1px solid @base-border-color;
       border-collapse: collapse;
       background-color: transparent;
@@ -158,8 +160,8 @@
 
     & > blockquote {
       overflow: auto;
-      padding: .5rem 1rem;
-      background-color: #f8f8f8;
+      padding: .75rem 1.2rem;
+      background-color: @background-color-highlight;
       border-left: .25rem solid @brand-secondary;
 
       p {
@@ -168,6 +170,7 @@
       }
 
       blockquote {
+        border-left: none;
         margin: 0 !important;
       }
     }
@@ -181,8 +184,8 @@
     }
 
     h1, h2, h3 {
-      padding-bottom: .5rem;
-      margin: 1.7rem 0 .6rem;
+      padding-bottom: 0.75rem;
+      margin: 2rem 0 1rem;
     }
 
     h1 {
@@ -204,6 +207,45 @@
 
     .support-article-content {
       font-size: 1rem;
+    }
+
+    .embed-responsive {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      overflow: hidden
+    }
+
+    .embed-responsive:before {
+      display: block;
+      content: ""
+    }
+
+    .embed-responsive .embed-responsive-item,.embed-responsive embed,.embed-responsive iframe,.embed-responsive object,.embed-responsive video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0
+    }
+
+    .embed-responsive-21by9:before {
+      padding-top: 42.85714%
+    }
+
+    .embed-responsive-16by9:before {
+      padding-top: 56.25%
+    }
+
+    .embed-responsive-4by3:before {
+      padding-top: 75%
+    }
+
+    .embed-responsive-1by1:before {
+      padding-top: 100%
     }
   }
 }
