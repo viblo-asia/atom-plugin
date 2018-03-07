@@ -1,15 +1,26 @@
 {
   ".platform-win32 atom-workspace, .platform-linux atom-workspace": {
-    "alt-S": "viblo:settings",
+    "ctrl-alt-o": "viblo:open",
+    "ctrl-alt-p": "viblo:publish-posts",
+    "ctrl-alt-d": "viblo:draft-posts",
+    "ctrl-alt-g": "viblo:gallery",
+    "ctrl-alt-c": "viblo:create-post",
+    "ctrl-shift-s": "viblo:save-post",
     "ctrl-alt-v": "viblo:toggle-preview",
-    "ctrl-shift-s": "viblo:save-post"
+    "ctrl-alt-i": "viblo:image-helper",
+    "ctrl-alt-s": "viblo:settings",
+    "ctrl-alt-a": "viblo:about"
   },
-  ".platform-darwin atom-workspace, .platform-linux atom-workspace": {
-    "alt-S": "viblo:settings",
+  ".platform-darwin atom-workspace": {
+    "cmd-alt-o": "viblo:open",
+    "cmd-alt-p": "viblo:publish-posts",
+    "cmd-alt-d": "viblo:draft-posts",
+    "cmd-alt-g": "viblo:gallery",
+    "cmd-alt-c": "viblo:create-post",
+    "cmd-shift-s": "viblo:save-post",
     "cmd-alt-v": "viblo:toggle-preview",
-    "cmd-shift-s": "viblo:save-post"
-  },
-  ".platform-win32 atom-text-editor, .platform-win32 .viblo-markdown-preview, .platform-linux atom-text-editor, .platform-linux .viblo-markdown-preview": {
-    "ctrl-alt-v": "viblo:toggle-preview"
+    "cmd-alt-i": "viblo:image-helper",
+    "cmd-alt-s": "viblo:settings",
+    "cmd-alt-a": "viblo:about"
   }
 }
