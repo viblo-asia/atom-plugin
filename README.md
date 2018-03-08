@@ -2,6 +2,8 @@
 
 ![plugin-screen-shot](./images/ss1.png)
 
+Viblo Plugin for Atom editor. Vietnamese documentation is available [here](./README.vi.md).
+
 ## Requirement
 - [Atom](https://atom.io/) version 1.x
 
@@ -45,12 +47,13 @@ Then right click  at Atom, choose `Save to Viblo` to save post into Viblo.
 After that, click `Publish post` button or `Save as Draft` button to save post into Viblo.
 
 ### Key maps
+ If you are using macOS, use <kbd>Cmd</kbd> instead <kbd>Ctrl</kbd>.
 **Atom key maps** that you should know before using:
 - <kbd>Ctrl + Shift + P</kbd>: Find and run available commands in atom.
 - <kbd>Ctrl + S</kbd>: Save your contents to local file from atom editor.
 - <kbd>Ctrl + Shift + F5</kbd>: Restart/Reload Atom.
 
-**Viblo Atom Plugin key maps** are supported. If you are using macOS, use <kbd>Cmd</kbd> instead <kbd>Ctrl</kbd>.
+**Viblo Atom Plugin key maps** are supported:
 - <kbd>Ctrl + Alt + O</kbd> or <kbd>Ctrl + Alt P</kbd>: Open `Publish Posts` page - List of all published posts.
 - <kbd>Ctrl + Alt + D</kbd>: Open `Draft Posts` page - List of all (public) drafts.
 - <kbd>Ctrl + Alt + G</kbd>: Open `Gallery` page.
@@ -85,4 +88,4 @@ and press <kbd>Enter</kbd>.
 - [Specification of Versioning of package](http://semver.org/)
 
 ### Licence
-[MIT](./LICENSE)
+[MIT](./LICENSE.md)
