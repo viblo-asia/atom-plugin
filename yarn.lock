@@ -676,10 +676,6 @@ mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
-medium-zoom@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-0.3.0.tgz#e0745b604260a824db2db1b64bf088a152c3fdfa"
-
 mimic-fn@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
