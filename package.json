@@ -1,7 +1,7 @@
 {
   "name": "viblo",
   "main": "./lib/index.js",
-  "version": "0.4.5",
+  "version": "1.0.0",
   "description": "Plug-in to integrate with Viblo - Free service for technical knowledge sharing",
   "keywords": [
     "markdown",
